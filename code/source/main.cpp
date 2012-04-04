@@ -1,4 +1,8 @@
 #include <iostream>
+#include <string>
+#include "newCharacter.h"
+#include <fstream>
+
 using namespace std;
 
 // Function declarations
@@ -8,11 +12,15 @@ void beginNewGame();
 void loadGame();
 void credits();
 void exit();
+void playerAwakens();
+
+// File streams
+fstream characterFileStream;
 
 // Main loop
 int main(int argc, char const *argv[])
 {
-	// Call mainMenu functino
+	// Call mainMenu function
 	mainMenu();
 	return 0;
 }
@@ -125,4 +133,26 @@ void pressEnterToContinue()
 	cin.sync();
 	cout << endl << "\nPress enter to continue..." << endl;
 	cin.get();
+}
+
+// Create new game function
+void beginNewGame()
+{
+	// Declare strings name, 
+	string name;
+
+	// Create an instance of character class
+	character new;
+
+	// Ask user for their name
+	cout << "Please enter your name: ";
+
+	// Store the user's input into name using getline
+	getline(cin, name);
+
+	// Stores player's inputted name into the instance we created of character
+	setPlayerName(name);
+
+	// Call playerAwakens funciton
+	playeAwakens();
 }
