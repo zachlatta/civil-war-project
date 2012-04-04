@@ -154,5 +154,5 @@ void beginNewGame()
 	setPlayerName(name);
 
 	// Call playerAwakens funciton
-	playeAwakens();
+	playerAwakens();
 }
