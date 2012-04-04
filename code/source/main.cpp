@@ -113,9 +113,16 @@ void credits()
 	system("pause");
 }
 
+// Exit function
+void exit()
+{
+	exit();
+}
+
 // "Press enter to continue..." function
 void pressEnterToContinue()
 {
-	cin.ignore();
-	cout << "Press enter to continue...";
+	cin.sync();
+	cout << endl << "\nPress enter to continue..." << endl;
+	cin.get();
 }
