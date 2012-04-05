@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
-#include "newCharacter.h"
-#include <fstream>
+#include "Character.h"
 
 using namespace std;
 
@@ -13,9 +12,6 @@ void loadGame();
 void credits();
 void exit();
 void playerAwakens();
-
-// File streams
-fstream characterFileStream;
 
 // Main loop
 int main(int argc, char const *argv[])
@@ -142,17 +138,27 @@ void beginNewGame()
 	string name;
 
 	// Create an instance of character class
-	character new;
+	Character character;
 
 	// Ask user for their name
 	cout << "Please enter your name: ";
+
+	cin.sync();
 
 	// Store the user's input into name using getline
 	getline(cin, name);
 
 	// Stores player's inputted name into the instance we created of character
-	setPlayerName(name);
+	character.setName(name);
 
-	// Call playerAwakens funciton
+	// Call playerAwakens function
 	playerAwakens();
+}
+
+void loadGame()
+{
+}
+
+void playerAwakens()
+{
 }

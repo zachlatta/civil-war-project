@@ -4,12 +4,15 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 class Character
 {
 	private:
 		string characterName;
 	public:
-		void setCharacterName();
-		string getCharacterName();
+		void setName(string);
+		string getName();
+		void saveToFile();
 };
 #endif
