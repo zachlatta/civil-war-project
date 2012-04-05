@@ -23,7 +23,12 @@ string Character::getName()
 // Save the user's data to save.dat
 void Character::saveToFile()
 {
-	characterSave.open("//files//save.dat");
+	// Creates new save file
+	characterSave.open("character.dat");
 
+	// Writes character's name to first line of save file
 	characterSave << characterName << endl;
+
+	// Closes save file
+	characterSave.close();
 }
