@@ -31,4 +31,5 @@ void Character::saveToFile()
 
 	// Closes save file
 	characterSave.close();
+
 }
