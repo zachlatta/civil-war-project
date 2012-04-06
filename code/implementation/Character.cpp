@@ -4,7 +4,7 @@
 
 using namespace std;
 
-fstream characterSave;
+ofstream characterSave;
 
 // Sets the character's name to what the user inputted
 void Character::setName(string name)
