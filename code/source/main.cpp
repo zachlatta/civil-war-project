@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 #include "Character.h"
 
 using namespace std;
@@ -157,6 +158,29 @@ void beginNewGame()
 
 void loadGame()
 {
+	int input;
+
+	Character character;
+
+	ifstream character("character.dat");
+	if(character)
+	{
+		cout << "Save file detected!\n" << endl;
+		cout << "Would you like to load it?" << endl;
+		cout << "[1] Yes" << endl;
+		cout << "[2] No\n" << endl;
+		cout << "Your input: " << endl;
+
+		switch(input)
+		{
+			case 1:
+			{
+				character
+			}
+		}
+
+	}
+
 }
 
 void playerAwakens()
