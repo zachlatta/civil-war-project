@@ -166,7 +166,7 @@ void loadGame()
 	Character character;
 
 	// Creates a new file stream "characterSave"
-	fstream characterSave.open("character.dat");
+	fstream characterSave("character.dat");
 
 	// If character.dat is not empty...
 	if(characterSave)
@@ -179,6 +179,7 @@ void loadGame()
 			cout << "[1] Yes" << endl;
 			cout << "[2] No\n" << endl;
 			cout << "Your input: " << endl;
+			cin >> input;
 
 			// Switch with input
 			switch(input)
@@ -187,7 +188,7 @@ void loadGame()
 				case 1:
 				{
 					// Stores the value of the first line of character.dat (character information save file) in string name
-					getLine(characterSave, name);
+					getline(characterSave, name);
 
 					// Sets name method variable of Character instance "character"
 					character.setName(name);
@@ -226,7 +227,7 @@ void loadGame()
 				default:
 				{
 					// Tells the user that they entered an invalid value
-					cout << "You have inputted an invalid value. Please enter either 1 or 2."
+					cout << "You have inputted an invalid value. Please enter either 1 or 2.";
 
 					// Press enter to continue...
 					pressEnterToContinue();
