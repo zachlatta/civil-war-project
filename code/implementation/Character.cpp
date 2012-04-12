@@ -20,6 +20,20 @@ string Character::getName()
 	return characterName;
 }
 
+// Set's the character's side to Confederate
+void Character::setConfederate()
+{
+	// Set's characterSide to "Confederate"
+	characterSide = "Confederate";
+}
+
+// Set's the character's side to Union
+void Character::setUnion()
+{
+	// Set's characterSide to "Union"
+	characterSide = "Union";
+}
+
 // Save the user's data to save.dat
 void Character::saveToFile()
 {
@@ -28,6 +42,9 @@ void Character::saveToFile()
 
 	// Writes character's name to first line of save file
 	characterSave << characterName << endl;
+
+	// Write character's side to the second line of save file
+	characterSave << charaterSide << endl;
 
 	// Closes save file
 	characterSave.close();

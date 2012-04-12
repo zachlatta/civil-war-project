@@ -301,6 +301,9 @@ void determineSide()
 						// If the user entered 1...
 						case 1:
 						{
+							// Set Character member variable characterSide to "Union"
+							character.setUnion();
+
 							// Use the Union storyline
 
 							break;
@@ -309,6 +312,9 @@ void determineSide()
 						// If the user entered 2...
 						case 2:
 						{
+							// Set Character member variable characterSide to "Confederate"
+							character.setConfederate();
+
 							// Use the Confederate storyline
 
 							break;
@@ -352,6 +358,9 @@ void determineSide()
 						// If user entered 1...
 						case 1:
 						{
+							// Set Character member variable characterSide to "Union"
+							character.setUnion();
+
 							// Use the Union storyline
 
 							break;
@@ -360,6 +369,9 @@ void determineSide()
 						// If user entered 2...
 						case 2:
 						{
+							// Set Character member variable characterSide to "Confederate"
+							character.setConfederate();
+							
 							// Use the Confederate storyline
 
 							break;
