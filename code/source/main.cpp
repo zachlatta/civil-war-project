@@ -2,6 +2,8 @@
 #include <string>
 #include <fstream>
 #include "Character.h"
+#include "confederate.cpp"
+#include "union.cpp"
 
 using namespace std;
 
@@ -12,7 +14,7 @@ void beginNewGame();
 void loadGame();
 void credits();
 void exit();
-void playerAwakens();
+void determineSide();
 
 // Main loop
 int main(int argc, char const *argv[])
@@ -254,6 +256,142 @@ void loadGame()
 
 }
 
-void playerAwakens()
+void determineSide()
 {
+	// Initiallizes userSelection variable of type integer.
+	int userSelection;
+
+	// Repeat the beloww
+	while(1)
+	{
+		// You awake in the middle of the night to...
+		cout << "You awake in the middle of the night to find yourself inside of some sort of a prison camp. One of your innmates casually points to a small tunnel created in one of the walls and whispers \"We're escaping tonight.\"\n" << endl;
+
+		// Give user optinos on what to do
+		cout << "[1] \"Wha? Who am I? Where am I?\"" << endl;
+		cout << "[2] \"Let's go.\"" << endl;
+		
+		// Stores user's input in userSelection
+		cout << " Your selection: ";
+		cin >> userSelection;
+
+		// Determine what to do with the user's input
+		switch(userSelection)
+		{
+			// If user entered 1...
+			case 1:
+			{
+				// Repeat the following
+				while(1)
+				{
+					// We'll get to that later. Here's your...
+					cout << "\"We'll get to that later. Here's your uniform. Let's get going.\"\nPlease enter the color of the uniform.\n" << endl;
+
+					// Print user's options
+					cout << "[1] Blue" << endl;
+					cout << "[2] Butternut" << endl;
+
+					// Take in user's input
+					cout << "Your selection: "
+					cin >> userSelection;
+
+					// Determines what to do with the user's selection
+					switch(userSelection)
+					{
+						// If the user entered 1...
+						case 1:
+						{
+							// Use the Union storyline
+
+							break;
+						}
+
+						// If the user entered 2...
+						case 2:
+						{
+							// Use the Confederate storyline
+
+							break;
+						}
+
+						// If the user did not enter 1 or 2...
+						default:
+						{
+							// Tells the user to enter either 1 or 2
+							cout << "Please enter either 1 or 2." << endl;
+
+							// Press enter to continue...
+							pressEnterToContinue();
+
+							break;
+						}
+					}
+				}
+			}
+
+			// If user entered 2...
+			case 2:
+			{
+				// Repeat the following
+				while(1)
+				{
+					// Before we go, you should...
+					cout << "\"Before we go, you should take your uniform. We were able to smuggle it in.\"\nPlease enter the color of the uniform.\n" << endl;
+
+					// Give user optinos
+					cout << "[1] Blue" << endl;
+					cout << "[2] Butternut" << endl;
+
+					// Take in user's input
+					cout << "Your selection: ";
+					cin >> userSelection;
+
+					// Determine what to do with user's selection
+					switch(userSelection)
+					{
+						// If user entered 1...
+						case 1:
+						{
+							// Use the Union storyline
+
+							break;
+						}
+
+						// If user entered 2...
+						case 2:
+						{
+							// Use the Confederate storyline
+
+							break;
+						}
+
+						// If user did not enter 1 or 2... 
+						default:
+						{
+							// Tells the user to enter either 1 or 2
+							cout << "Please enter either 1 or 2." << endl;
+
+							// Press enter to continue...
+							pressEnterToContinue();
+
+							break;
+						}
+					}
+				}
+
+			}
+
+			// If user did not enter 1 or 2...
+			default:
+			{
+				// Tells the user to enter either 1 or 2
+							cout << "Please enter either 1 or 2." << endl;
+
+							// Press enter to continue...
+							pressEnterToContinue();
+
+							break;
+			}
+		}
+	}
 }
