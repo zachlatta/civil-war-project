@@ -3,18 +3,17 @@
 #include <fstream>
 #include "Character.h"
 #include "confederate.cpp"
-#include "union.cpp"
 
 using namespace std;
 
-// Function declarations
+// Function prototypes
 void pressEnterToContinue();
 void mainMenu();
 void beginNewGame();
 void loadGame();
 void credits();
 void exit();
-void determineSide();
+void determineSide(Character character);
 
 // Main loop
 int main(int argc, char const *argv[])
@@ -155,7 +154,7 @@ void beginNewGame()
 	character.setName(name);
 
 	// Call playerAwakens function
-	playerAwakens();
+	determineSide(character);
 }
 
 void loadGame()
@@ -256,7 +255,7 @@ void loadGame()
 
 }
 
-void determineSide()
+void determineSide(Character character)
 {
 	// Initiallizes userSelection variable of type integer.
 	int userSelection;
@@ -292,7 +291,7 @@ void determineSide()
 					cout << "[2] Butternut" << endl;
 
 					// Take in user's input
-					cout << "Your selection: "
+					cout << "Your selection: ";
 					cin >> userSelection;
 
 					// Determines what to do with the user's selection

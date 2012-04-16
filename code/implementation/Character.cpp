@@ -44,7 +44,7 @@ void Character::saveToFile()
 	characterSave << characterName << endl;
 
 	// Write character's side to the second line of save file
-	characterSave << charaterSide << endl;
+	characterSave << characterSide << endl;
 
 	// Closes save file
 	characterSave.close();
