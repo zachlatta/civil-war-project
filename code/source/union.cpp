@@ -1,3 +1,5 @@
+#ifndef UNION_CPP
+#define UNION_CPP
 #include <iostream>
 #include "main.cpp"
 
@@ -103,3 +105,5 @@ void scene5()
 
 	scene6();
 }
+
+#endif
