@@ -4,23 +4,21 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 class Character
 {
 	private:
 		// Character's name
-		string characterName;
+        std::string characterName;
 
 		// Character's side
-		string characterSide;
+        std::string characterSide;
 		
 	public:
 		// Sets the name of the character from the user's input
-		void setName(string);
+        void setName(std::string);
 
 		// Returns character's name
-		string getName();
+        std::string getName();
 
 		// Set's player's side to Confederate
 		void setConfederate();
