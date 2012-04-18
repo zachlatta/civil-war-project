@@ -2,19 +2,17 @@
 #include <iostream>
 #include <fstream>
 
-using namespace std;
-
-ofstream characterSave;
+std::ofstream characterSave;
 
 // Sets the character's name to what the user inputted
-void Character::setName(string name)
+void Character::setName(std::string name)
 {
 	// Set characterName to equal what user inputted
 	characterName = name;
 }
 
 // Output the character's name when called
-string Character::getName()
+std::string Character::getName()
 {
 	// Return characterName
 	return characterName;
@@ -41,10 +39,10 @@ void Character::saveToFile()
 	characterSave.open("character.dat");
 
 	// Writes character's name to first line of save file
-	characterSave << characterName << endl;
+	characterSave << characterName << std::endl;
 
 	// Write character's side to the second line of save file
-	characterSave << characterSide << endl;
+	characterSave << characterSide << std::endl;
 
 	// Closes save file
 	characterSave.close();
