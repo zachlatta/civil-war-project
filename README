@@ -1,10 +1,26 @@
-=========================================================
- _____    _____       ___   _____       ___  ___   _____  
-|  _  \  | ____|     /   | |  _  \     /   |/   | | ____| 
-| |_| |  | |__      / /| | | | | |    / /|   /| | | |__   
-|  _  /  |  __|    / / | | | | | |   / / |__/ | | |  __|  
-| | \ \  | |___   / /  | | | |_| |  / /       | | | |___  
-|_|  \_\ |_____| /_/   |_| |_____/ /_/        |_| |_____| 
-=========================================================
+		=========================================================
+		 _____    _____       ___   _____       ___  ___   _____  
+		|  _  \  | ____|     /   | |  _  \     /   |/   | | ____| 
+		| |_| |  | |__      / /| | | | | |    / /|   /| | | |__   
+		|  _  /  |  __|    / / | | | | | |   / / |__/ | | |  __|  
+		| | \ \  | |___   / /  | | | |_| |  / /       | | | |___  
+		|_|  \_\ |_____| /_/   |_| |_____/ /_/        |_| |_____| 
+		=========================================================
 
-This project is for my 8th grade history class. I have yet to finish the read me.
+This project was created for my 8th grade history class. The user plays an
+escapee from Libby Prison, Richmond. After the protagonist escapes, he's
+greated by a negro, Jack, who offers to help him find some food. Jack guides
+him to a nearby house where Prince, another negro, and his wife provide him
+with some much neeeded food. After the protagonist is finished eating, Jack
+gives him directions to the nearby town of Ashland, where he believes the 
+protagonist will be able to find help.
+
+This project was coded in C++ using Visual Studio 2010, Sublime Text 2, and
+Xcode 4. The code is not very efficiently written. It was planned to create
+a struct that would hold the scene's text and what the next scene would be.
+All of the struct's instances would have their content stored in a file that
+would be read in a while loop to create all of the appropriate instances.
+Unfortunately, I did not have the time to figure out the logistics of this
+system and I was forced to create a storyLine() function instead. The
+storyLine() function is simply a bunch of std::cout statements along with
+switch statements to create the storyline.
