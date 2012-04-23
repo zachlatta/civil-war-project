@@ -189,7 +189,7 @@ void storyLine()
 	std::cout << std::endl << std::endl;
 	std::cout << "The negro starts off at a rapid pace leading you across the fields for a      " << std::endl;
 	std::cout << "distance of about four miles to the house of another negro. The negro knocks  " << std::endl;
-	std::cout << "on the house\'s door and is greeted by another male negro who exclaimes       " << std::endl;
+	std::cout << "on the house\'s door and is greeted by another male negro who exclaims        " << std::endl;
 	std::cout << "\"Jack! Where\'s you been?\" Jack says \"\'ello Prince, I\'ve found this here  " << std::endl;
 	std::cout << "yankee pris\'ner \'scapee. He\'s mighty weak an\' \'ungry. Could you an\' the " << std::endl;
 	std::cout << "missus provide this \'ere fellow with some food?\"                            " << std::endl;
@@ -269,13 +269,13 @@ void storyLine()
 			break;
 	}
 
-	// User leaves Prince's house. Jack tells you to go to Ashland
+	// User leaves Prince's house. Jack tells you to go to Slash Cottage
 	std::cout << std::endl << std::endl;
 	std::cout << "Prince says \"You\'se always welcome back. It was a pleasure having yer.\" You " << std::endl;
 	std::cout << "once again thank him for his hospitality and proceed to leave the house with   " << std::endl;
 	std::cout << "Jack. Jack explains that he thinks that your best course of action would be to " << std::endl;
-	std::cout << "head up to Ashland. He tells you that if you head north until sundown, sleep,  " << std::endl;
-	std::cout << "and then continue heading north until noon you should see Ashland to your      " << std::endl;
+	std::cout << "head up to Slash Cottage. He tells you that if you head north until sundown, sleep,  " << std::endl;
+	std::cout << "and then continue heading north until noon you should see Slash Cottage to your      " << std::endl;
 	std::cout << "left. You decide to trust him with this information and start your journey     " << std::endl;
 	std::cout << "north.                                                                         " << std::endl;
 	std::cout << std::endl;
@@ -286,11 +286,11 @@ void storyLine()
 	while(true)
 	{
 		std::cout << std::endl << std::endl;
-		std::cout << "While gazing forward, you see the beginnings of a forest, about a mile away.    " << std::endl;
-		std::cout << "In about 20 minutes you finally reach the entrance to it and decide that you    " << std::endl;
-		std::cout << "might as well traverse through it and hope for the best. After stumbling        " << std::endl;
-		std::cout << "around in the forest for what seems to be hours, you come to the conclusion     " << std::endl;
-		std::cout << "that you are lost. You also feel quite parched. What do you do?                 " << std::endl;
+		std::cout << "While gazing forward, you see the beginnings of a forest, about a mile away.   " << std::endl;
+		std::cout << "In about 20 minutes you finally reach the entrance to it and decide that you   " << std::endl;
+		std::cout << "might as well traverse through it and hope for the best. After stumbling       " << std::endl;
+		std::cout << "around in the forest for what seems to be hours, you come to the conclusion    " << std::endl;
+		std::cout << "that you are lost. You also feel quite parched. What do you do?                " << std::endl;
 		std::cout << std::endl;
 		std::cout << "[1] Rest until morning." << std::endl;
 		std::cout << "[2] Continue exploring." << std::endl;
@@ -302,9 +302,9 @@ void storyLine()
 		case 1:
 			{
 				std::cout << std::endl << std::endl;
-				std::cout << "You find a nook at the base of the tree that looks like a comfortable and safe  " << std::endl;
-				std::cout << "place to spend the night. You do your best to curl up in it and fall asleep to  " << std::endl;
-				std::cout << "the peaceful sounds of nature around you, hoping for the best.                  " << std::endl;
+				std::cout << "You find a nook at the base of the tree that looks like a comfortable and safe " << std::endl;
+				std::cout << "place to spend the night. You do your best to curl up in it and fall asleep to " << std::endl;
+				std::cout << "the peaceful sounds of nature around you, hoping for the best.                 " << std::endl;
 				std::cout << std::endl;
 			
 				pressEnterToContinue();
@@ -317,7 +317,7 @@ void storyLine()
 				std::cout << std::endl << std::endl;
 				std::cout << "You stumble around until you decide that you are probably walking in circles.   " << std::endl;
 				std::cout << "You start to feel drowsy from the day's activities and eventually collapse from " << std::endl;
-				std::cout << "exaustion.                                                                      " << std::endl;
+				std::cout << "exhaustion.                                                                     " << std::endl;
 				std::cout << std::endl;
 
 				pressEnterToContinue();
@@ -352,9 +352,9 @@ void storyLine()
 	while (true)
 	{
 		std::cout << std::endl << std::endl;
-		std::cout << "Your hear what sounds like the gently sound of a flowing stream. You            " << std::endl;
-		std::cout << "contemplate whether you should pursue it or not. You fear it may just be a      " << std::endl;
-		std::cout << "figment of your imagination. What do you do?                                    " << std::endl;
+		std::cout << "Your hear what sounds like the gently sound of a flowing stream. You           " << std::endl;
+		std::cout << "contemplate whether you should pursue it or not. You fear it may just be a     " << std::endl;
+		std::cout << "figment of your imagination. What do you do?                                   " << std::endl;
 		std::cout << std::endl;
 		std::cout << "[1] Try to locate the stream." << std::endl;
 		std::cout << "[2] Continue onward." << std::endl;
@@ -366,19 +366,144 @@ void storyLine()
 		case 1:
 			{
 				std::cout << std::endl << std::endl;
-				std::cout << "You navigate your way towards the origin of the sound of the streaming water.   " << std::endl;
-				std::cout << "But as you move closer to the sound, the sound does not get any louder.         " << std::endl;
-				std::cout << "Suddently the sound stops and leaves dead silence in its wake. You wonder if    " << std::endl;
-				std::cout << "were actually following a sound in the first place.                             " << std::endl;
+				std::cout << "You navigate your way towards the origin of the sound of the streaming water.  " << std::endl;
+				std::cout << "But as you move closer to the sound, the sound does not get any louder.        " << std::endl;
+				std::cout << "Suddenly the sound stops and leaves dead silence in its wake. You wonder if    " << std::endl;
+				std::cout << "you were actually following a sound in the first place.                        " << std::endl;
 				std::cout << std::endl;
 
 				pressEnterToContinue();
+
+				std::cout << std::endl << std::endl;
+				std::cout << "You try to make your way back to where you were before trying to locate the    " << std::endl;
+				std::cout << "stream, but not no avail. You are completely lost. You cannot remember which   " << std::endl;
+				std::cout << "direction was north. You begin to panic. What will you do? You have no water.  " << std::endl;
+				std::cout << "You have no idea where you are. You are stuck in a forest. Alone. Without help." << std::endl;
+				std::cout << std::endl;
+
+				pressEnterToContinue();
+
+
+				while (true)
+				{
+					std::cout << std::endl << std::endl;
+					std::cout << "You sit down and decide to think. Jack told you to go north, so you should     " << std::endl;
+					std::cout << "first find out where north is. You\'re extremely thirsty. You\'re worried that " << std::endl;
+					std::cout << "you may not be able to find water. You don\'t want to die that way. You need   " << std::endl;
+					std::cout << "to find water. What do you do?                                                 " << std::endl;
+					std::cout << std::endl;
+					std::cout << "[1] Try to figure out which direction is north." << std::endl;
+					std::cout << "[2] Continue the search for water." << std::endl;
+					std::cout << "Your selection: " << std::endl;
+					std::cin >> userSelection;
+
+					switch (userSelection)
+					{
+					case 1:
+						{
+							std::cout << std::endl << std::endl;
+							std::cout << "Okay. Jack told you to go north. Slash Cottage is north. Slash Cottage can provide help.    " << std::endl;
+							std::cout << "Slash Cottage will provide water. But how do you know which way north is? Ah! Since   " << std::endl;
+							std::cout << "the sun rises in the east and sets in the west, you can just look at where the  " << std::endl;
+							std::cout << "sun is to figure out where north is. But you can't see the sun. You're in the   " << std::endl;
+							std::cout << "forest. Wait, you can climb a tree. Climbing a tree will let you see where the  " << std::endl;
+							std::cout << "sun is, which will tell you where north is.                                     " << std::endl;
+							std::cout << std::endl;
+
+							pressEnterToContinue();
+
+
+							std::cout << std::endl << std::endl;
+							std::cout << "You climb a nearby tree and nearly fall off. You see the sun setting in front   " << std::endl;
+							std::cout << "of you. That means north is right. North is right. You descend from the tree    " << std::endl;
+							std::cout << "and start heading to your right. You hope you'll reach Slash Cottage soon.            " << std::endl;
+							std::cout << std::endl;
+
+							pressEnterToContinue();
+
+
+							std::cout << std::endl << std::endl;
+							std::cout << "After walking for about an hour you decide that you might as well spend another " << std::endl;
+							std::cout << "night in the forest. You'll probably get lost if you continue to walk. In the   " << std::endl;
+							std::cout << "morning you continue walking for what seems to be forever. Suddenly, you break  " << std::endl;
+							std::cout << "free of the forest and see the small town of Slash Cottage in the distance. You are   " << std::endl;
+							std::cout << "overjoyed.                                                                      " << std::endl;
+							std::cout << std::endl;
+
+							pressEnterToContinue();
+
+							break;
+						}
+
+					case 2:
+						{
+							std::cout << std::endl << std::endl;
+							std::cout << "You start to continue your search for water. You see a hare scurry away and    " << std::endl;
+							std::cout << "decide that you might as well follow it. To your surprise, it leads you to a   " << std::endl;
+							std::cout << "small stream. You are delighted and plunge your face into it. You scoop up as  " << std::endl;
+							std::cout << "much water as you can and do your best to drink it. You feel so much better.   " << std::endl;
+							std::cout << "Your body is no longer deprived of water and your mouth is once again moist.   " << std::endl;
+							std::cout << std::endl;
+
+							pressEnterToContinue();
+
+
+							std::cout << std::endl << std::endl;
+							std::cout << "You decide that the stream must come from somewhere, so you decide to follow it" << std::endl;
+							std::cout << "upstream. You decide that you might as well spend another night in the forest  " << std::endl;
+							std::cout << "after walking for about an hour. In the morning, you begin your journey again. " << std::endl;
+							std::cout << "After what seems to be hours, you break free of the forest and see Slash       " << std::endl;
+							std::cout << "Cottage in the distance. You are elated with joy. Not only were you able to    " << std::endl;
+							std::cout << "locate water, you were also able to find Slash Cottage.                        " << std::endl;
+							std::cout << std::endl;
+
+							pressEnterToContinue();
+
+							break;
+						}
+
+					default:
+						{
+							std::cout << std::endl << std::endl;
+							invalidInput();
+						
+							pressEnterToContinue();
+
+							break;
+						}
+					}
+
+					if (userSelection == 1 || userSelection == 2)
+						break;
+				}
 
 				break;
 			}
 
 		case 2:
 			{
+				std::cout << std::endl << std::endl;
+				std::cout << "You start to continue your search for water. You see a hare scurry away and     " << std::endl;
+				std::cout << "You continue onwards. You see a hare scurry away and decide that you might as   " << std::endl;
+				std::cout << "well follow it. To your surprise, it leads you to a small stream. You are       " << std::endl;
+				std::cout << "delighted and plunge your face into it. You scoop up as much water as you can   " << std::endl;
+				std::cout << "and do your best to drink it. You feel so much better. Your body is no longer   " << std::endl;
+				std::cout << "deprived of water and your mouth is once again moist.                           " << std::endl;
+				std::cout << std::endl;
+
+				pressEnterToContinue();
+
+
+				std::cout << std::endl << std::endl;
+				std::cout << "You decide that the stream must come from somewhere and you decide to follow it " << std::endl;
+				std::cout << "upstream. You decide that you might as well spend another night in the forest   " << std::endl;
+				std::cout << "after walking for about an hour. In the morning, you begin your journey again.  " << std::endl;
+				std::cout << "After what seems to be hours, you break free of the forest and see Slash Cottage in   " << std::endl;
+				std::cout << "the distance. You are elated with joy. Not only were you able to locate water,  " << std::endl;
+				std::cout << "you were also able to find Slash Cottage.                                             " << std::endl;
+				std::cout << std::endl;
+				
+				pressEnterToContinue();
 				break;
 			}
 
@@ -386,14 +511,11 @@ void storyLine()
 			{
 				std::cout << std::endl << std::endl;
 				invalidInput();
-				std::cout << std::endl;
 				break;
 			}
 		}
 
 		if (userSelection == 1 || userSelection == 2)
-		{
 			break;
-		}
 	}
 }
