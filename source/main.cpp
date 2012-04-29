@@ -549,760 +549,215 @@ void storyLine()
 			std::cout << "illness. I'm hoping to get back to Lee\'s army.\"                              " << std::endl;
 			std::cout << "Your selection: ";
 			std::cin >> userSelection;
+		}
+	}
 
-			switch (userSelection)
+	switch (userSelection)
+	{
+	case 1:
+		{
+			std::cout << std::endl << std::endl;
+			std::cout << "The young boy says \"But why weren'\t ya already with them? I reckon most      " << std::endl;
+			std::cout << "soldiers travel together. They are in an army after all.\"                     " << std::endl;
+			std::cout << std::endl;
+			std::cout << "[1] \"Well, surprisingly enough we don\'t. We soldiers actually are just told  " << std::endl;
+			std::cout << "to be places by certain months. We don\'t necessarily travel together.\"       " << std::endl;
+			std::cout << "[2] \"Err, well I\'m a special case. It\'s unimportant though.\"               " << std::endl;
+			std::cout << "Your selection: ";
+			std::cin >> userSelection;
+
+			break;
+		}
+
+	case 2:
+		{
+			std::cout << std::endl << std::endl;
+			std::cout << "The young boy says \"But why weren'\t ya already with them? I reckon most      " << std::endl;
+			std::cout << "The young boy says \"Are ya\'ll alright now? I hope you can fight them Federals" << std::endl;
+			std::cout << "again. I reckon soldiers travel together though. They are in an army after all." << std::endl;
+			std::cout << "I bet people miss you.\"                                                       " << std::endl;
+			std::cout << std::endl;
+			std::cout << "[1] \"Well, surprisingly enough we don\'t. We soldiers actually are just told  " << std::endl;
+			std::cout << "to be places by certain months. We don\'t necessarily travel together.\"       " << std::endl;
+			std::cout << "[2] \"Err, well I\'m a special case. It\'s unimportant though.\"               " << std::endl;
+			std::cout << "Your selection: ";
+			std::cin >> userSelection;
+
+			break;
+		}
+
+	default:
+		{
+			std::cout << std::endl << std::endl;
+			invalidInput();			
+			pressEnterToContinue();
+			break;
+		}
+	}
+
+	// Boy says that he's never heard of the user's situation before. User is taken to boy's cottage. User takes a nap.
+	std::cout << std::endl << std::endl;
+	std::cout << "The boy says \"Well I\'ve never heard that before. I\'m gonna get my mother.   " << std::endl;
+	std::cout << "Wait here.\" The boy scuffles off in a slight jog to his mother. In a few      " << std::endl;
+	std::cout << "minutes he reappears with a woman who clearly does not get enough sleep. Her   " << std::endl;
+	std::cout << "eyes are sullen and she obviously is overworked. The boy says \"Mom! This      " << std::endl;
+	std::cout << "man\'s from the army! Can he have supper with us?\" The boy\'s mother replies  " << std::endl;
+	std::cout << "with \"I don't see why not, he can relax with us while I make supper.\" You    " << std::endl;
+	std::cout << "are led by the mother and boy to their cottage. The mother says that you are   " << std::endl;
+	std::cout << "free to take a nap on one of the cots while she makes supper. You decide to    " << std::endl;
+	std::cout << "take the offer and nap on the cot.                                             " << std::endl;
+	std::cout << std::endl;
+
+	pressEnterToContinue();
+
+	// User wakes up, boy's mother asks user if user is ready to eat. User can ask questions or go and eat.
+	while (true)
+	{
+		// User wakes up, smells dinner, and can ask the boy's mom a variety of questions
+		std::cout << std::endl << std::endl;
+		std::cout << "When you wake up, you smell the aroma of green peas pudding. The boy's mom     " << std::endl;
+		std::cout << "approaches you and asks \"Are you ready to eat?\"                              " << std::endl;
+		std::cout << std::endl;
+		std::cout << "[1] \"Yes, I think I'm ready to eat.\"                                         " << std::endl;
+		std::cout << "[2] \"Why are you being so kind to me?\"                                       " << std::endl;
+		std::cout << "[3] \"How did you get here?\"                                                  " << std::endl;
+		std::cout << "[4] \"How many people live here?\"                                             " << std::endl;
+		std::cout << "Your selection: ";
+		std::cin >> userSelection;
+
+		switch (userSelection)																																																			{
+		case 1:
 			{
-			case 1:
-				{
-					while(true)
-					{
-						std::cout << std::endl << std::endl;
-						std::cout << "The young boy says \"But why weren'\t ya already with them? I reckon most      " << std::endl;
-						std::cout << "soldiers travel together. They are in an army after all.\"                     " << std::endl;
-						std::cout << std::endl;
-						std::cout << "[1] \"Well, surprisingly enough we don\'t. We soldiers actually are just told  " << std::endl;
-						std::cout << "to be places by certain months. We don\'t necessarily travel together.\"       " << std::endl;
-						std::cout << "[2] \"Err, well I\'m a special case. It\'s unimportant though.\"               " << std::endl;
-						std::cout << "Your selection: ";
-						std::cin >> userSelection;
-
-						switch (userSelection)
-						{
-						case 1:
-							{
-								// Boy says that he's never heard of the user's situation before. User is taken to boy's cottage. User takes a nap.
-								std::cout << std::endl << std::endl;
-								std::cout << "The boy says \"Well I\'ve never heard that before. I\'m gonna get my mother.   " << std::endl;
-								std::cout << "Wait here.\" The boy scuffles off in a slight jog to his mother. In a few      " << std::endl;
-								std::cout << "minutes he reappears with a woman who clearly does not get enough sleep. Her   " << std::endl;
-								std::cout << "eyes are sullen and she obviously is overworked. The boy says \"Mom! This      " << std::endl;
-								std::cout << "man\'s from the army! Can he have supper with us?\" The boy\'s mother replies  " << std::endl;
-								std::cout << "with \"I don't see why not, he can relax with us while I make supper.\" You    " << std::endl;
-								std::cout << "are led by the mother and boy to their cottage. The mother says that you are   " << std::endl;
-								std::cout << "free to take a nap on one of the cots while she makes supper. You decide to    " << std::endl;
-								std::cout << "take the offer and nap on the cot.                                             " << std::endl;
-								std::cout << std::endl;
-
-								pressEnterToContinue();
-
-								// User wakes up, boy's mother asks user if user is ready to eat. User can ask questions or go and eat.
-								while (true)
-								{
-									// User wakes up, smells dinner, and can ask the boy's mom a variety of questions
-									std::cout << std::endl << std::endl;
-									std::cout << "When you wake up, you smell the aroma of green peas pudding. The boy's mom     " << std::endl;
-									std::cout << "approaches you and asks \"Are you ready to eat?\"                              " << std::endl;
-									std::cout << std::endl;
-									std::cout << "[1] \"Yes, I think I'm ready to eat.\"                                         " << std::endl;
-									std::cout << "[2] \"Why are you being so kind to me?\"                                       " << std::endl;
-									std::cout << "[3] \"How did you get here?\"                                                  " << std::endl;
-									std::cout << "[4] \"How many people live here?\"                                             " << std::endl;
-									std::cout << "Your selection: ";
-									std::cin >> userSelection;
-
-									switch (userSelection)																																																			{
-									case 1:
-										{
-											// User is taken to the dinner table. Boy's mother asks user where he's from. User has to lie.
-											while (true)
-											{
-												std::cout << std::endl << std::endl;
-												std::cout << "You are escorted across the room to a seat at the wooden table. On the table,  " << std::endl;
-												std::cout << "you see green peas pudding in a wooden bowl. It smells delicious. You want     " << std::endl;
-												std::cout << "to eat it all as quickly as possible, but you decide that it'd be more         " << std::endl;
-												std::cout << "polite if you took your time. The woman asks you \"So where are ya from?\"     " << std::endl;
-												std::cout << "You reply with...                                                              " << std::endl;
-												std::cout << std::endl;
-												std::cout << "[1] \"Richmond\"                                                               " << std::endl;
-												std::cout << "[2] \"Suffolk\"                                                                " << std::endl;
-												std::cout << "[3] \"Lawrenceville\"                                                          " << std::endl;
-												std::cout << "[4] \"Not anywhere particular, I generally reside where there\'s work.         " << std::endl;
-												std::cout << "Your selection: " << std::endl;
-												std::cin >> userSelection;
-							
-												switch (userSelection)
-												{
-												case 1:
-													{
-														std::cout << std::endl << std::endl;
-														std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always dreamt of having " << std::endl;
-														std::cout << "a home over there. It's really a nice place,\" replied the boy\'s mother.      " << std::endl;
-														std::cout << std::endl;
-
-														pressEnterToContinue();
-														break;
-													}
-
-												case 2:
-													{
-														std::cout << std::endl << std::endl;
-														std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always dreamt of having " << std::endl;
-														std::cout << "a home over there. It's really a nice place,\" replied the boy\'s mother.      " << std::endl;
-														std::cout << std::endl;
-
-														pressEnterToContinue();
-														break;
-													}
-
-												case 3:
-													{
-														std::cout << std::endl << std::endl;
-														std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always dreamt of having " << std::endl;
-														std::cout << "a home over there. It's really a nice place,\" replied the boy\'s mother.      " << std::endl;
-														std::cout << std::endl;
-
-														pressEnterToContinue();
-														break;
-													}
-
-												case 4:
-													{
-														std::cout << std::endl << std::endl;
-														std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always wondered what    " << std::endl;
-														std::cout << "it\'d be like to do that,\" replied the boy\'s mother.                         " << std::endl;
-														std::cout << std::endl;
-
-														pressEnterToContinue();
-														break;
-													}
-
-												default:
-													{
-														std::cout << std::endl << std::endl;
-														invalidInput();
-														break;
-													}
-												}
-
-												if (userSelection == 1 || userSelection == 2 || userSelection == 3 || userSelection == 4)
-													break;
-
-											}
-
-											break;
-										}
-
-									case 2:
-										{
-											// Boy's mother says that user is helping save the Confederacy. User decides that the Union isn't invading, just reuniting.
-											std::cout << std::endl << std::endl;
-											std::cout << "The boy\'s mother says \"Well, you\'re helping save our country from the       " << std::endl;
-											std::cout << "invading Federals. I have trouble comprehending how they think they can come   " << std::endl;
-											std::cout << "and invade what is rightfully our\'s.\" You start to think. Is the Union truly " << std::endl;
-											std::cout << "invading the Confederacy? Is what we're invading rightfully the Confederacy\'s?" << std::endl;
-											std::cout << "You decide that no, it isn\t. The Union is taking back what is rightfully ours." << std::endl;
-											std::cout << "We are reuniting the country for the better.                                   " << std::endl;
-											std::cout << std::endl;
-
-											pressEnterToContinue();
-
-											break;
-										}
-
-									case 3:
-										{
-											// Boy's mother says that she isn't sure how she got to Slash Cottage
-											std::cout << std::endl << std::endl;
-											std::cout << "The boy\'s mother says \"Truth be told, I'm not completely sure. I remember    " << std::endl;
-											std::cout << "growing up in this area. My father traded here. He passed away about 20 years  " << std::endl;
-											std::cout << "ago. I wish I could have done something about his illness.\"                   " << std::endl;
-											std::cout << std::endl;
-
-											pressEnterToContinue();
-
-											break;
-										}
-
-									case 4:
-										{
-											// Boy's mother says that just her family in Slash Cottage. Her husband went off to fight the Union
-											std::cout << std::endl;
-											std::cout << "The boy\'s mother says \"It\'s just me and the rest of my family. My husband   " << std::endl;
-											std::cout << "went off to fight against the Federals.\"                                      " << std::endl;
-											std::cout << std::endl;
-
-											pressEnterToContinue();
-
-											break;
-										}
-
-									default:
-										{
-											std::cout << std::endl << std::endl;
-											invalidInput();
-							
-											pressEnterToContinue();
-
-											break;
-										}
-									}
-
-									if (userSelection == 1 || userSelection == 2 || userSelection == 3 || userSelection == 4)
-										break;
-								}
-							}
-
-						case 2:
-							{
-								// Boy says that he's never heard of the user's situation before. User is taken to boy's cottage. User takes a nap.
-								std::cout << std::endl << std::endl;
-								std::cout << "The boy says \"Well I\'ve never heard that before. I\'m gonna get my mother.   " << std::endl;
-								std::cout << "Wait here.\" The boy scuffles off in a slight jog to his mother. In a few      " << std::endl;
-								std::cout << "minutes he reappears with a woman who clearly does not get enough sleep. Her   " << std::endl;
-								std::cout << "eyes are sullen and she obviously is overworked. The boy says \"Mom! This      " << std::endl;
-								std::cout << "man\'s from the army! Can he have supper with us?\" The boy\'s mother replies  " << std::endl;
-								std::cout << "with \"I don't see why not, he can relax with us while I make supper.\" You    " << std::endl;
-								std::cout << "are led by the mother and boy to their cottage. The mother says that you are   " << std::endl;
-								std::cout << "free to take a nap on one of the cots while she makes supper. You decide to    " << std::endl;
-								std::cout << "take the offer and nap on the cot.                                             " << std::endl;
-								std::cout << std::endl;
-
-								pressEnterToContinue();
-
-								// User wakes up, boy's mother asks user if user is ready to eat. User can ask questions or go and eat.
-								while (true)
-								{
-									// User wakes up, smells dinner, and can ask the boy's mom a variety of questions
-									std::cout << std::endl << std::endl;
-									std::cout << "When you wake up, you smell the aroma of green peas pudding. The boy's mom     " << std::endl;
-									std::cout << "approaches you and asks \"Are you ready to eat?\"                              " << std::endl;
-									std::cout << std::endl;
-									std::cout << "[1] \"Yes, I think I'm ready to eat.\"                                         " << std::endl;
-									std::cout << "[2] \"Why are you being so kind to me?\"                                       " << std::endl;
-									std::cout << "[3] \"How did you get here?\"                                                  " << std::endl;
-									std::cout << "[4] \"How many people live here?\"                                             " << std::endl;
-									std::cout << "Your selection: ";
-									std::cin >> userSelection;
-
-									switch (userSelection)																																																			{
-									case 1:
-										{
-											// User is taken to the dinner table. Boy's mother asks user where he's from. User has to lie.
-											while (true)
-											{
-												std::cout << std::endl << std::endl;
-												std::cout << "You are escorted across the room to a seat at the wooden table. On the table,  " << std::endl;
-												std::cout << "you see green peas pudding in a wooden bowl. It smells delicious. You want     " << std::endl;
-												std::cout << "to eat it all as quickly as possible, but you decide that it'd be more         " << std::endl;
-												std::cout << "polite if you took your time. The woman asks you \"So where are ya from?\"     " << std::endl;
-												std::cout << "You reply with...                                                              " << std::endl;
-												std::cout << std::endl;
-												std::cout << "[1] \"Richmond\"                                                               " << std::endl;
-												std::cout << "[2] \"Suffolk\"                                                                " << std::endl;
-												std::cout << "[3] \"Lawrenceville\"                                                          " << std::endl;
-												std::cout << "[4] \"Not anywhere particular, I generally reside where there\'s work.         " << std::endl;
-												std::cout << "Your selection: " << std::endl;
-												std::cin >> userSelection;
-							
-												switch (userSelection)
-												{
-												case 1:
-													{
-														std::cout << std::endl << std::endl;
-														std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always dreamt of having " << std::endl;
-														std::cout << "a home over there. It's really a nice place,\" replied the boy\'s mother.      " << std::endl;
-														std::cout << std::endl;
-
-														pressEnterToContinue();
-														break;
-													}
-
-												case 2:
-													{
-														std::cout << std::endl << std::endl;
-														std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always dreamt of having " << std::endl;
-														std::cout << "a home over there. It's really a nice place,\" replied the boy\'s mother.      " << std::endl;
-														std::cout << std::endl;
-
-														pressEnterToContinue();
-														break;
-													}
-
-												case 3:
-													{
-														std::cout << std::endl << std::endl;
-														std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always dreamt of having " << std::endl;
-														std::cout << "a home over there. It's really a nice place,\" replied the boy\'s mother.      " << std::endl;
-														std::cout << std::endl;
-
-														pressEnterToContinue();
-														break;
-													}
-
-												case 4:
-													{
-														std::cout << std::endl << std::endl;
-														std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always wondered what    " << std::endl;
-														std::cout << "it\'d be like to do that,\" replied the boy\'s mother.                         " << std::endl;
-														std::cout << std::endl;
-
-														pressEnterToContinue();
-														break;
-													}
-
-												default:
-													{
-														std::cout << std::endl << std::endl;
-														invalidInput();
-														break;
-													}
-												}
-
-												if (userSelection == 1 || userSelection == 2 || userSelection == 3 || userSelection == 4)
-													break;
-
-											}
-
-											break;
-										}
-
-									case 2:
-										{
-											// Boy's mother says that user is helping save the Confederacy. User decides that the Union isn't invading, just reuniting.
-											std::cout << std::endl << std::endl;
-											std::cout << "The boy\'s mother says \"Well, you\'re helping save our country from the       " << std::endl;
-											std::cout << "invading Federals. I have trouble comprehending how they think they can come   " << std::endl;
-											std::cout << "and invade what is rightfully our\'s.\" You start to think. Is the Union truly " << std::endl;
-											std::cout << "invading the Confederacy? Is what we're invading rightfully the Confederacy\'s?" << std::endl;
-											std::cout << "You decide that no, it isn\t. The Union is taking back what is rightfully ours." << std::endl;
-											std::cout << "We are reuniting the country for the better.                                   " << std::endl;
-											std::cout << std::endl;
-
-											pressEnterToContinue();
-
-											break;
-										}
-
-									case 3:
-										{
-											// Boy's mother says that she isn't sure how she got to Slash Cottage
-											std::cout << std::endl << std::endl;
-											std::cout << "The boy\'s mother says \"Truth be told, I'm not completely sure. I remember    " << std::endl;
-											std::cout << "growing up in this area. My father traded here. He passed away about 20 years  " << std::endl;
-											std::cout << "ago. I wish I could have done something about his illness.\"                   " << std::endl;
-											std::cout << std::endl;
-
-											pressEnterToContinue();
-
-											break;
-										}
-
-									case 4:
-										{
-											// Boy's mother says that just her family in Slash Cottage. Her husband went off to fight the Union
-											std::cout << std::endl;
-											std::cout << "The boy\'s mother says \"It\'s just me and the rest of my family. My husband   " << std::endl;
-											std::cout << "went off to fight against the Federals.\"                                      " << std::endl;
-											std::cout << std::endl;
-
-											pressEnterToContinue();
-
-											break;
-										}
-
-									default:
-										{
-											std::cout << std::endl << std::endl;
-											invalidInput();
-							
-											pressEnterToContinue();
-
-											break;
-										}
-									}
-
-									if (userSelection == 1 || userSelection == 2 || userSelection == 3 || userSelection == 4)
-										break;
-								}
-							}
-						}
-					}
-
-					okayToBreakLoop = 1;
-				}
-
-			case 2:
-				{
-					while(true)
-					{
-						std::cout << std::endl << std::endl;
-						std::cout << "The young boy says \"But why weren'\t ya already with them? I reckon most      " << std::endl;
-						std::cout << "soldiers travel together. They are in an army after all.\"                     " << std::endl;
-						std::cout << std::endl;
-						std::cout << "[1] \"Well, surprisingly enough we don\'t. We soldiers actually are just told  " << std::endl;
-						std::cout << "to be places by certain months. We don\'t necessarily travel together.\"       " << std::endl;
-						std::cout << "[2] \"Err, well I\'m a special case. It\'s unimportant though.\"               " << std::endl;
-						std::cout << "Your selection: ";
-						std::cin >> userSelection;
-
-						switch (userSelection)
-						{
-						case 1:
-							{
-								// Boy says that he's never heard of the user's situation before. User is taken to boy's cottage. User takes a nap.
-								std::cout << std::endl << std::endl;
-								std::cout << "The boy says \"Well I\'ve never heard that before. I\'m gonna get my mother.   " << std::endl;
-								std::cout << "Wait here.\" The boy scuffles off in a slight jog to his mother. In a few      " << std::endl;
-								std::cout << "minutes he reappears with a woman who clearly does not get enough sleep. Her   " << std::endl;
-								std::cout << "eyes are sullen and she obviously is overworked. The boy says \"Mom! This      " << std::endl;
-								std::cout << "man\'s from the army! Can he have supper with us?\" The boy\'s mother replies  " << std::endl;
-								std::cout << "with \"I don't see why not, he can relax with us while I make supper.\" You    " << std::endl;
-								std::cout << "are led by the mother and boy to their cottage. The mother says that you are   " << std::endl;
-								std::cout << "free to take a nap on one of the cots while she makes supper. You decide to    " << std::endl;
-								std::cout << "take the offer and nap on the cot.                                             " << std::endl;
-								std::cout << std::endl;
-
-								pressEnterToContinue();
-
-								// User wakes up, boy's mother asks user if user is ready to eat. User can ask questions or go and eat.
-								while (true)
-								{
-									// User wakes up, smells dinner, and can ask the boy's mom a variety of questions
-									std::cout << std::endl << std::endl;
-									std::cout << "When you wake up, you smell the aroma of green peas pudding. The boy's mom     " << std::endl;
-									std::cout << "approaches you and asks \"Are you ready to eat?\"                              " << std::endl;
-									std::cout << std::endl;
-									std::cout << "[1] \"Yes, I think I'm ready to eat.\"                                         " << std::endl;
-									std::cout << "[2] \"Why are you being so kind to me?\"                                       " << std::endl;
-									std::cout << "[3] \"How did you get here?\"                                                  " << std::endl;
-									std::cout << "[4] \"How many people live here?\"                                             " << std::endl;
-									std::cout << "Your selection: ";
-									std::cin >> userSelection;
-
-									switch (userSelection)																																																			{
-									case 1:
-										{
-											// User is taken to the dinner table. Boy's mother asks user where he's from. User has to lie.
-											while (true)
-											{
-												std::cout << std::endl << std::endl;
-												std::cout << "You are escorted across the room to a seat at the wooden table. On the table,  " << std::endl;
-												std::cout << "you see green peas pudding in a wooden bowl. It smells delicious. You want     " << std::endl;
-												std::cout << "to eat it all as quickly as possible, but you decide that it'd be more         " << std::endl;
-												std::cout << "polite if you took your time. The woman asks you \"So where are ya from?\"     " << std::endl;
-												std::cout << "You reply with...                                                              " << std::endl;
-												std::cout << std::endl;
-												std::cout << "[1] \"Richmond\"                                                               " << std::endl;
-												std::cout << "[2] \"Suffolk\"                                                                " << std::endl;
-												std::cout << "[3] \"Lawrenceville\"                                                          " << std::endl;
-												std::cout << "[4] \"Not anywhere particular, I generally reside where there\'s work.         " << std::endl;
-												std::cout << "Your selection: " << std::endl;
-												std::cin >> userSelection;
-							
-												switch (userSelection)
-												{
-												case 1:
-													{
-														std::cout << std::endl << std::endl;
-														std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always dreamt of having " << std::endl;
-														std::cout << "a home over there. It's really a nice place,\" replied the boy\'s mother.      " << std::endl;
-														std::cout << std::endl;
-
-														pressEnterToContinue();
-														break;
-													}
-
-												case 2:
-													{
-														std::cout << std::endl << std::endl;
-														std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always dreamt of having " << std::endl;
-														std::cout << "a home over there. It's really a nice place,\" replied the boy\'s mother.      " << std::endl;
-														std::cout << std::endl;
-
-														pressEnterToContinue();
-														break;
-													}
-
-												case 3:
-													{
-														std::cout << std::endl << std::endl;
-														std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always dreamt of having " << std::endl;
-														std::cout << "a home over there. It's really a nice place,\" replied the boy\'s mother.      " << std::endl;
-														std::cout << std::endl;
-
-														pressEnterToContinue();
-														break;
-													}
-
-												case 4:
-													{
-														std::cout << std::endl << std::endl;
-														std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always wondered what    " << std::endl;
-														std::cout << "it\'d be like to do that,\" replied the boy\'s mother.                         " << std::endl;
-														std::cout << std::endl;
-
-														pressEnterToContinue();
-														break;
-													}
-
-												default:
-													{
-														std::cout << std::endl << std::endl;
-														invalidInput();
-														break;
-													}
-												}
-
-												if (userSelection == 1 || userSelection == 2 || userSelection == 3 || userSelection == 4)
-													break;
-
-											}
-
-											break;
-										}
-
-									case 2:
-										{
-											// Boy's mother says that user is helping save the Confederacy. User decides that the Union isn't invading, just reuniting.
-											std::cout << std::endl << std::endl;
-											std::cout << "The boy\'s mother says \"Well, you\'re helping save our country from the       " << std::endl;
-											std::cout << "invading Federals. I have trouble comprehending how they think they can come   " << std::endl;
-											std::cout << "and invade what is rightfully our\'s.\" You start to think. Is the Union truly " << std::endl;
-											std::cout << "invading the Confederacy? Is what we're invading rightfully the Confederacy\'s?" << std::endl;
-											std::cout << "You decide that no, it isn\t. The Union is taking back what is rightfully ours." << std::endl;
-											std::cout << "We are reuniting the country for the better.                                   " << std::endl;
-											std::cout << std::endl;
-
-											pressEnterToContinue();
-
-											break;
-										}
-
-									case 3:
-										{
-											// Boy's mother says that she isn't sure how she got to Slash Cottage
-											std::cout << std::endl << std::endl;
-											std::cout << "The boy\'s mother says \"Truth be told, I'm not completely sure. I remember    " << std::endl;
-											std::cout << "growing up in this area. My father traded here. He passed away about 20 years  " << std::endl;
-											std::cout << "ago. I wish I could have done something about his illness.\"                   " << std::endl;
-											std::cout << std::endl;
-
-											pressEnterToContinue();
-
-											break;
-										}
-
-									case 4:
-										{
-											// Boy's mother says that just her family in Slash Cottage. Her husband went off to fight the Union
-											std::cout << std::endl;
-											std::cout << "The boy\'s mother says \"It\'s just me and the rest of my family. My husband   " << std::endl;
-											std::cout << "went off to fight against the Federals.\"                                      " << std::endl;
-											std::cout << std::endl;
-
-											pressEnterToContinue();
-
-											break;
-										}
-
-									default:
-										{
-											std::cout << std::endl << std::endl;
-											invalidInput();
-							
-											pressEnterToContinue();
-
-											break;
-										}
-									}
-
-									if (userSelection == 1 || userSelection == 2 || userSelection == 3 || userSelection == 4)
-										break;
-								}
-							}
-
-						case 2:
-							{
-								// Boy says that he's never heard of the user's situation before. User is taken to boy's cottage. User takes a nap.
-								std::cout << std::endl << std::endl;
-								std::cout << "The boy says \"Well I\'ve never heard that before. I\'m gonna get my mother.   " << std::endl;
-								std::cout << "Wait here.\" The boy scuffles off in a slight jog to his mother. In a few      " << std::endl;
-								std::cout << "minutes he reappears with a woman who clearly does not get enough sleep. Her   " << std::endl;
-								std::cout << "eyes are sullen and she obviously is overworked. The boy says \"Mom! This      " << std::endl;
-								std::cout << "man\'s from the army! Can he have supper with us?\" The boy\'s mother replies  " << std::endl;
-								std::cout << "with \"I don't see why not, he can relax with us while I make supper.\" You    " << std::endl;
-								std::cout << "are led by the mother and boy to their cottage. The mother says that you are   " << std::endl;
-								std::cout << "free to take a nap on one of the cots while she makes supper. You decide to    " << std::endl;
-								std::cout << "take the offer and nap on the cot.                                             " << std::endl;
-								std::cout << std::endl;
-
-								pressEnterToContinue();
-
-								// User wakes up, boy's mother asks user if user is ready to eat. User can ask questions or go and eat.
-								while (true)
-								{
-									// User wakes up, smells dinner, and can ask the boy's mom a variety of questions
-									std::cout << std::endl << std::endl;
-									std::cout << "When you wake up, you smell the aroma of green peas pudding. The boy's mom     " << std::endl;
-									std::cout << "approaches you and asks \"Are you ready to eat?\"                              " << std::endl;
-									std::cout << std::endl;
-									std::cout << "[1] \"Yes, I think I'm ready to eat.\"                                         " << std::endl;
-									std::cout << "[2] \"Why are you being so kind to me?\"                                       " << std::endl;
-									std::cout << "[3] \"How did you get here?\"                                                  " << std::endl;
-									std::cout << "[4] \"How many people live here?\"                                             " << std::endl;
-									std::cout << "Your selection: ";
-									std::cin >> userSelection;
-
-									switch (userSelection)																																																			{
-									case 1:
-										{
-											// User is taken to the dinner table. Boy's mother asks user where he's from. User has to lie.
-											while (true)
-											{
-												std::cout << std::endl << std::endl;
-												std::cout << "You are escorted across the room to a seat at the wooden table. On the table,  " << std::endl;
-												std::cout << "you see green peas pudding in a wooden bowl. It smells delicious. You want     " << std::endl;
-												std::cout << "to eat it all as quickly as possible, but you decide that it'd be more         " << std::endl;
-												std::cout << "polite if you took your time. The woman asks you \"So where are ya from?\"     " << std::endl;
-												std::cout << "You reply with...                                                              " << std::endl;
-												std::cout << std::endl;
-												std::cout << "[1] \"Richmond\"                                                               " << std::endl;
-												std::cout << "[2] \"Suffolk\"                                                                " << std::endl;
-												std::cout << "[3] \"Lawrenceville\"                                                          " << std::endl;
-												std::cout << "[4] \"Not anywhere particular, I generally reside where there\'s work.         " << std::endl;
-												std::cout << "Your selection: " << std::endl;
-												std::cin >> userSelection;
-							
-												switch (userSelection)
-												{
-												case 1:
-													{
-														std::cout << std::endl << std::endl;
-														std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always dreamt of having " << std::endl;
-														std::cout << "a home over there. It's really a nice place,\" replied the boy\'s mother.      " << std::endl;
-														std::cout << std::endl;
-
-														pressEnterToContinue();
-														break;
-													}
-
-												case 2:
-													{
-														std::cout << std::endl << std::endl;
-														std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always dreamt of having " << std::endl;
-														std::cout << "a home over there. It's really a nice place,\" replied the boy\'s mother.      " << std::endl;
-														std::cout << std::endl;
-
-														pressEnterToContinue();
-														break;
-													}
-
-												case 3:
-													{
-														std::cout << std::endl << std::endl;
-														std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always dreamt of having " << std::endl;
-														std::cout << "a home over there. It's really a nice place,\" replied the boy\'s mother.      " << std::endl;
-														std::cout << std::endl;
-
-														pressEnterToContinue();
-														break;
-													}
-
-												case 4:
-													{
-														std::cout << std::endl << std::endl;
-														std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always wondered what    " << std::endl;
-														std::cout << "it\'d be like to do that,\" replied the boy\'s mother.                         " << std::endl;
-														std::cout << std::endl;
-
-														pressEnterToContinue();
-														break;
-													}
-
-												default:
-													{
-														std::cout << std::endl << std::endl;
-														invalidInput();
-														break;
-													}
-												}
-
-												if (userSelection == 1 || userSelection == 2 || userSelection == 3 || userSelection == 4)
-													break;
-
-											}
-
-											break;
-										}
-
-									case 2:
-										{
-											// Boy's mother says that user is helping save the Confederacy. User decides that the Union isn't invading, just reuniting.
-											std::cout << std::endl << std::endl;
-											std::cout << "The boy\'s mother says \"Well, you\'re helping save our country from the       " << std::endl;
-											std::cout << "invading Federals. I have trouble comprehending how they think they can come   " << std::endl;
-											std::cout << "and invade what is rightfully our\'s.\" You start to think. Is the Union truly " << std::endl;
-											std::cout << "invading the Confederacy? Is what we're invading rightfully the Confederacy\'s?" << std::endl;
-											std::cout << "You decide that no, it isn\t. The Union is taking back what is rightfully ours." << std::endl;
-											std::cout << "We are reuniting the country for the better.                                   " << std::endl;
-											std::cout << std::endl;
-
-											pressEnterToContinue();
-
-											break;
-										}
-
-									case 3:
-										{
-											// Boy's mother says that she isn't sure how she got to Slash Cottage
-											std::cout << std::endl << std::endl;
-											std::cout << "The boy\'s mother says \"Truth be told, I'm not completely sure. I remember    " << std::endl;
-											std::cout << "growing up in this area. My father traded here. He passed away about 20 years  " << std::endl;
-											std::cout << "ago. I wish I could have done something about his illness.\"                   " << std::endl;
-											std::cout << std::endl;
-
-											pressEnterToContinue();
-
-											break;
-										}
-
-									case 4:
-										{
-											// Boy's mother says that just her family in Slash Cottage. Her husband went off to fight the Union
-											std::cout << std::endl;
-											std::cout << "The boy\'s mother says \"It\'s just me and the rest of my family. My husband   " << std::endl;
-											std::cout << "went off to fight against the Federals.\"                                      " << std::endl;
-											std::cout << std::endl;
-
-											pressEnterToContinue();
-
-											break;
-										}
-
-									default:
-										{
-											std::cout << std::endl << std::endl;
-											invalidInput();
-							
-											pressEnterToContinue();
-
-											break;
-										}
-									}
-
-									if (userSelection == 1 || userSelection == 2 || userSelection == 3 || userSelection == 4)
-										break;
-								}
-							}
-						}
-					}
-
-					okayToBreakLoop = 1;
-				}
-
-			default:
-				{
-					std::cout << std::endl << std::endl;
-					invalidInput();
-							
-					pressEnterToContinue();
-
-					break;
-				}
+				break;
 			}
 
-			if (okayToBreakLoop == 1)
+		case 2:
+			{
+				// Boy's mother says that user is helping save the Confederacy. User decides that the Union isn't invading, just reuniting.
+				std::cout << std::endl << std::endl;
+				std::cout << "The boy\'s mother says \"Well, you\'re helping save our country from the       " << std::endl;
+				std::cout << "invading Federals. I have trouble comprehending how they think they can come   " << std::endl;
+				std::cout << "and invade what is rightfully our\'s.\" You start to think. Is the Union truly " << std::endl;
+				std::cout << "invading the Confederacy? Is what we're invading rightfully the Confederacy\'s?" << std::endl;
+				std::cout << "You decide that no, it isn\t. The Union is taking back what is rightfully ours." << std::endl;
+				std::cout << "We are reuniting the country for the better.                                   " << std::endl;
+				std::cout << std::endl;
+
+				pressEnterToContinue();
+
 				break;
+			}
+
+		case 3:
+			{
+				// Boy's mother says that she isn't sure how she got to Slash Cottage
+				std::cout << std::endl << std::endl;
+				std::cout << "The boy\'s mother says \"Truth be told, I'm not completely sure. I remember    " << std::endl;
+				std::cout << "growing up in this area. My father traded here. He passed away about 20 years  " << std::endl;
+				std::cout << "ago. I wish I could have done something about his illness.\"                   " << std::endl;
+				std::cout << std::endl;
+
+				pressEnterToContinue();
+
+				break;
+			}
+
+		case 4:
+			{
+				// Boy's mother says that just her family in Slash Cottage. Her husband went off to fight the Union
+				std::cout << std::endl;
+				std::cout << "The boy\'s mother says \"It\'s just me and the rest of my family. My husband   " << std::endl;
+				std::cout << "went off to fight against the Federals.\"                                      " << std::endl;
+				std::cout << std::endl;
+
+				pressEnterToContinue();
+
+				break;
+			}
+
+		default:
+			{
+				std::cout << std::endl << std::endl;
+				invalidInput();	
+				pressEnterToContinue();
+
+				break;
+			}
 		}
+	}
+
+	// User is taken to the dinner table. Boy's mother asks user where he's from. User has to lie.
+	while (true)
+	{
+		std::cout << std::endl << std::endl;
+		std::cout << "You are escorted across the room to a seat at the wooden table. On the table,  " << std::endl;
+		std::cout << "you see green peas pudding in a wooden bowl. It smells delicious. You want     " << std::endl;
+		std::cout << "to eat it all as quickly as possible, but you decide that it'd be more         " << std::endl;
+		std::cout << "polite if you took your time. The woman asks you \"So where are ya from?\"     " << std::endl;
+		std::cout << "You reply with...                                                              " << std::endl;
+		std::cout << std::endl;
+		std::cout << "[1] \"Richmond\"                                                               " << std::endl;
+		std::cout << "[2] \"Suffolk\"                                                                " << std::endl;
+		std::cout << "[3] \"Lawrenceville\"                                                          " << std::endl;
+		std::cout << "[4] \"Not anywhere particular, I generally reside where there\'s work.         " << std::endl;
+		std::cout << "Your selection: " << std::endl;
+		std::cin >> userSelection;
+							
+		switch (userSelection)
+		{
+		case 1:
+			{
+				std::cout << std::endl << std::endl;
+				std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always dreamt of having " << std::endl;
+				std::cout << "a home over there. It's really a nice place,\" replied the boy\'s mother.      " << std::endl;
+				std::cout << std::endl;
+
+				pressEnterToContinue();
+				break;
+			}
+
+		case 2:
+			{
+				std::cout << std::endl << std::endl;
+				std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always dreamt of having " << std::endl;
+				std::cout << "a home over there. It's really a nice place,\" replied the boy\'s mother.      " << std::endl;
+				std::cout << std::endl;
+
+				pressEnterToContinue();
+				break;
+			}
+
+		case 3:
+			{
+				std::cout << std::endl << std::endl;
+				std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always dreamt of having " << std::endl;
+				std::cout << "a home over there. It's really a nice place,\" replied the boy\'s mother.      " << std::endl;
+				std::cout << std::endl;
+
+				pressEnterToContinue();
+				break;
+			}
+
+		case 4:
+			{
+				std::cout << std::endl << std::endl;
+				std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always wondered what    " << std::endl;
+				std::cout << "it\'d be like to do that,\" replied the boy\'s mother.                         " << std::endl;
+				std::cout << std::endl;
+
+				pressEnterToContinue();
+				break;
+			}
+
+		default:
+			{
+				std::cout << std::endl << std::endl;
+				invalidInput();
+				break;
+			}
+		}
+
+		if (userSelection == 1 || userSelection == 2 || userSelection == 3 || userSelection == 4)
+			break;
 	}
 }
