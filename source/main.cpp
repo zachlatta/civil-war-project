@@ -530,27 +530,19 @@ void storyLine()
 			break;
 	}
 
-	while (true)
-	{
-		{
-			// Flag that breaks the while loop if its value is 1
-			bool okayToBreakLoop = 0;
-
-			std::cout << std::endl << std::endl;
-			std::cout << "After walking for about seven miles you finally reach the town of Slash        " << std::endl;
-			std::cout << "Cottage. To your surprise, it is hardly a town at all. It appears to consist   " << std::endl;
-			std::cout << "of only a few households. You wonder if one of the households would provide    " << std::endl;
-			std::cout << "you with some food and drink. Suddenly, a boy who looks about eight years of   " << std::endl;
-			std::cout << "age approaches you and says \"\'ello Sar, what\'s you\'se doin\' \round this   " << std::endl;
-			std::cout << "place?\"                                                                       " << std::endl;
-			std::cout << std::endl;
-			std::cout << "[1] \"Just thought I\'d stop by before heading up to fight those damned Yankees.\"" << std::endl;
-			std::cout << "[2] \"I\'m actually lost, after I enrolled I came down with some sort of       " << std::endl;
-			std::cout << "illness. I'm hoping to get back to Lee\'s army.\"                              " << std::endl;
-			std::cout << "Your selection: ";
-			std::cin >> userSelection;
-		}
-	}
+	std::cout << std::endl << std::endl;
+	std::cout << "After walking for about seven miles you finally reach the town of Slash        " << std::endl;
+	std::cout << "Cottage. To your surprise, it is hardly a town at all. It appears to consist   " << std::endl;
+	std::cout << "of only a few households. You wonder if one of the households would provide    " << std::endl;
+	std::cout << "you with some food and drink. Suddenly, a boy who looks about eight years of   " << std::endl;
+	std::cout << "age approaches you and says \"\'ello Sar, what\'s you\'se doin\' \round this   " << std::endl;
+	std::cout << "place?\"                                                                       " << std::endl;
+	std::cout << std::endl;
+	std::cout << "[1] \"Just thought I\'d stop by before heading up to fight those damned Yankees.\"" << std::endl;
+	std::cout << "[2] \"I\'m actually lost, after I enrolled I came down with some sort of       " << std::endl;
+	std::cout << "illness. I'm hoping to get back to Lee\'s army.\"                              " << std::endl;
+	std::cout << "Your selection: ";
+	std::cin >> userSelection;
 
 	switch (userSelection)
 	{
@@ -684,6 +676,9 @@ void storyLine()
 				break;
 			}
 		}
+
+		if (userSelection == 1 || userSelection == 2 || userSelection == 3 || userSelection == 4)
+			break;
 	}
 
 	// User is taken to the dinner table. Boy's mother asks user where he's from. User has to lie.
