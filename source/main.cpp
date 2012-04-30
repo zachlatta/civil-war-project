@@ -58,7 +58,7 @@ void pressEnterToContinue()
 	std::cin.get();
 }
 
-// Tell user that input was invalid, ouput two newlines, and prompt the user to press enter to continue
+// Tell user that input was invalid, output two newlines, and prompt the user to press enter to continue
 void invalidInput()
 {
 	std::cout << "Your selection was invalid. Please enter a valid value." << std::endl << std::endl;
@@ -68,11 +68,15 @@ void invalidInput()
 // Tell the user the programmer and references, then prompt user to press enter to continue
 void bibliography()
 {
+	std::cout << std::endl << std::endl;
 	std::cout << "Programmed and written by Zachary Latta" << std::endl;
 	std::cout << std::endl;
 	std::cout << "References:" << std::endl;
+	std::cout << "Just go to http://goo.gl/AgXAx." << std::endl;
+	std::cout << std::endl;
 
 	pressEnterToContinue();
+	std::cout << std::endl;
 }
 
 void storyLine()
@@ -387,7 +391,7 @@ void storyLine()
 
 				std::cout << std::endl << std::endl;
 				std::cout << "You try to make your way back to where you were before trying to locate the    " << std::endl;
-				std::cout << "stream, but not no avail. You are completely lost. You cannot remember which   " << std::endl;
+				std::cout << "stream, but to no avail. You are completely lost. You cannot remember which    " << std::endl;
 				std::cout << "direction was north. You begin to panic. What will you do? You have no water.  " << std::endl;
 				std::cout << "You have no idea where you are. You are stuck in a forest. Alone. Without help." << std::endl;
 				std::cout << std::endl;
@@ -755,4 +759,50 @@ void storyLine()
 		if (userSelection == 1 || userSelection == 2 || userSelection == 3 || userSelection == 4)
 			break;
 	}
+
+	// User spends night with the boy and his mother. User leaves in the morning.
+	std::cout << std::endl << std::endl;
+	std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always wondered what    " << std::endl;
+	std::cout << " After some more small talk, you finish up your supper and thank the boy\'s    " << std::endl;
+	std::cout << "mother for her hospitality. She asks you if you\'d like to spend the night with" << std::endl;
+	std::cout << "them, and you gladly oblige. In the morning, you eat breakfast with the family " << std::endl;
+	std::cout << "and tell them that you should probably get going. You once again thank them for" << std::endl;
+	std::cout << "their kindness and proceed to leave.                                           " << std::endl;
+	std::cout << std::endl;
+
+	pressEnterToContinue();
+
+	// User travels to user's home in Rockville. User is almost discovered by a stray rebel soldier.
+	std::cout << std::endl << std::endl;
+	std::cout << "Over the next few weeks you work your way up to your home in Rockville. You    " << std::endl;
+	std::cout << "find support in nearby towns whenever you can. When you can\'t find support    " << std::endl;
+	std::cout << "from towns, you do your best to live off of the land by trapping animals such  " << std::endl;
+	std::cout << "as rabbits. While drinking water at a nearby stream, you\'re almost discovered " << std::endl;
+	std::cout << "by a stray rebel soldier. Luckily, he didn't see you.                          " << std::endl;
+	std::cout << std::endl;
+
+	pressEnterToContinue();
+
+	// User finally arrives home!
+	std::cout << std::endl << std::endl;
+	std::cout << "After what seems like forever, you finally arrive at Rockville. You barter the " << std::endl;
+	std::cout << "rebel uniform for a cheap pair of clothes while explaining your situation to a " << std::endl;
+	std::cout << "local salesman. You bathe and change into the new clothes because you want to  " << std::endl;
+	std::cout << "look your best when your wife and kid see you. You finally approach your home  " << std::endl;
+	std::cout << "and knock on the door. Your wife opens the door and explains \"Oh my god! " << character.getName() << "!" << std::endl;
+	std::cout << "How did you get here! I haven\'t seen you in forever! Let me get the           " << std::endl;
+	std::cout << "children...\" You explain your situation to her and your children. They all    " << std::endl;
+	std::cout << "welcome you back with great enthusiasm and ask you all about the adventures    " << std::endl;
+	std::cout << "you had.                                                                       " << std::endl;
+	std::cout << std::endl;
+
+	pressEnterToContinue();
+
+	std::cout << "     =====================================================================    " << std::endl;
+	std::cout << "     =                             THE  END                              =    " << std::endl;
+	std::cout << "     =====================================================================    " << std::endl;
+	std::cout << std::endl;
+	
+	pressEnterToContinue();
+	std::cout << std::endl;
 }
