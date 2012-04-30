@@ -9,11 +9,19 @@
 
 This project was created for my 8th grade history class. The user plays an
 escapee from Libby Prison, Richmond. After the protagonist escapes, he's
-greated by a negro, Jack, who offers to help him find some food. Jack guides
+greeted by a negro, Jack, who offers to help him find some food. Jack guides
 him to a nearby house where Prince, another negro, and his wife provide him
-with some much neeeded food. After the protagonist is finished eating, Jack
-gives him directions to the nearby town of Ashland, where he believes the 
-protagonist will be able to find help.
+with some much needed food. After the protagonist is finished eating, Jack
+gives him directions to the nearby town of Slash Cottage, where he believes
+the protagonist will be able to find help. The protagonist decides to take
+his advice and venture to Slash Cottage. Unfortunately, the protagonist gets
+lost in the forest and must search for water. When he finally gets to Slash
+Cottage, he is relieved. He is then approached by a boy who asks him a few
+questions and eventually invites him over for supper. The protagonist spends
+the night with the boy and his family. In the morning, he departs to his home
+in Rockville. He faces many dangers along the way, but he finally makes it to
+Rockville where he is greeted by his wife and children who are eager to hear
+all about his adventures.
 
 This project was coded in C++ using Visual Studio 2010, Sublime Text 2, and
 Xcode 4. The code is not very efficiently written. It was planned to create
