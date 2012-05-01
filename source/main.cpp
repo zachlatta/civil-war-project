@@ -240,10 +240,10 @@ void storyLine()
 		case 1:
 			{
 				std::cout << std::endl << std::endl;
-				std::cout << "Prince says \"Me mother always used to say I\'d grow up to be a prince. I       " << std::endl;
-				std::cout << "guess I just started calling myself that after a while, in memory of her of     " << std::endl;
-				std::cout << "course. She passed away when I was a young\'un, probably around the age of      " << std::endl;
-				std::cout << "5.\"                                                                            " << std::endl;
+				std::cout << "Prince says \"Me mother always used to say I\'d grow up to be a prince. I      " << std::endl;
+				std::cout << "guess I just started calling myself that after a while, in memory of her of    " << std::endl;
+				std::cout << "course. She passed away when I was a young\'un, probably around the age of     " << std::endl;
+				std::cout << "5.\"                                                                           " << std::endl;
 				std::cout << std::endl;
 			
 				pressEnterToContinue();
@@ -453,11 +453,11 @@ void storyLine()
 					case 2:
 						{
 							std::cout << std::endl << std::endl;
-							std::cout << "You start to continue your search for water. You see a hare scurry away and    " << std::endl;
-							std::cout << "decide that you might as well follow it. To your surprise, it leads you to a   " << std::endl;
-							std::cout << "small stream. You are delighted and plunge your face into it. You scoop up as  " << std::endl;
-							std::cout << "much water as you can and do your best to drink it. You feel so much better.   " << std::endl;
-							std::cout << "Your body is no longer deprived of water and your mouth is once again moist.   " << std::endl;
+							std::cout << "You start to continue your search for water. You see a hare scurry away and   " << std::endl;
+							std::cout << "decide that you might as well follow it. To your surprise, it leads you to a  " << std::endl;
+							std::cout << "small stream. You are delighted and plunge your face into it. You scoop up as " << std::endl;
+							std::cout << "much water as you can and do your best to drink it. You feel so much better.  " << std::endl;
+							std::cout << "Your body is no longer deprived of water and your mouth is once again moist.  " << std::endl;
 							std::cout << std::endl;
 
 							pressEnterToContinue();
@@ -762,8 +762,7 @@ void storyLine()
 
 	// User spends night with the boy and his mother. User leaves in the morning.
 	std::cout << std::endl << std::endl;
-	std::cout << "\"Ah, how interesting!\" the boy's mother says, \"I've always wondered what    " << std::endl;
-	std::cout << " After some more small talk, you finish up your supper and thank the boy\'s    " << std::endl;
+	std::cout << "After some more small talk, you finish up your supper and thank the boy\'s    " << std::endl;
 	std::cout << "mother for her hospitality. She asks you if you\'d like to spend the night with" << std::endl;
 	std::cout << "them, and you gladly oblige. In the morning, you eat breakfast with the family " << std::endl;
 	std::cout << "and tell them that you should probably get going. You once again thank them for" << std::endl;
