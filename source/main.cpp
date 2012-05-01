@@ -402,10 +402,10 @@ void storyLine()
 				while (true)
 				{
 					std::cout << std::endl << std::endl;
-					std::cout << "You sit down and decide to think. Jack told you to go north, so you should     " << std::endl;
-					std::cout << "first find out where north is. You\'re extremely thirsty. You\'re worried that " << std::endl;
-					std::cout << "you may not be able to find water. You don\'t want to die that way. You need   " << std::endl;
-					std::cout << "to find water. What do you do?                                                 " << std::endl;
+					std::cout << "You sit down and decide to think. Jack told you to go north, so you should    " << std::endl;
+					std::cout << "first find out where north is. You\'re extremely thirsty. You\'re worried that" << std::endl;
+					std::cout << "you may not be able to find water. You don\'t want to die that way. You need  " << std::endl;
+					std::cout << "to find water. What do you do?                                                " << std::endl;
 					std::cout << std::endl;
 					std::cout << "[1] Try to figure out which direction is north." << std::endl;
 					std::cout << "[2] Continue the search for water." << std::endl;
@@ -453,11 +453,11 @@ void storyLine()
 					case 2:
 						{
 							std::cout << std::endl << std::endl;
-							std::cout << "You start to continue your search for water. You see a hare scurry away and   " << std::endl;
-							std::cout << "decide that you might as well follow it. To your surprise, it leads you to a  " << std::endl;
-							std::cout << "small stream. You are delighted and plunge your face into it. You scoop up as " << std::endl;
-							std::cout << "much water as you can and do your best to drink it. You feel so much better.  " << std::endl;
-							std::cout << "Your body is no longer deprived of water and your mouth is once again moist.  " << std::endl;
+							std::cout << "You start to continue your search for water. You see a hare scurry away and  " << std::endl;
+							std::cout << "decide that you might as well follow it. To your surprise, it leads you to a " << std::endl;
+							std::cout << "small stream. You are delighted and plunge your face into it. You scoop up as" << std::endl;
+							std::cout << "much water as you can and do your best to drink it. You feel so much better. " << std::endl;
+							std::cout << "Your body is no longer deprived of water and your mouth is once again moist. " << std::endl;
 							std::cout << std::endl;
 
 							pressEnterToContinue();
@@ -498,12 +498,12 @@ void storyLine()
 		case 2:
 			{
 				std::cout << std::endl << std::endl;
-				std::cout << "You start to continue your search for water. You see a hare scurry away and     " << std::endl;
-				std::cout << "You continue onwards. You see a hare scurry away and decide that you might as   " << std::endl;
-				std::cout << "well follow it. To your surprise, it leads you to a small stream. You are       " << std::endl;
-				std::cout << "delighted and plunge your face into it. You scoop up as much water as you can   " << std::endl;
-				std::cout << "and do your best to drink it. You feel so much better. Your body is no longer   " << std::endl;
-				std::cout << "deprived of water and your mouth is once again moist.                           " << std::endl;
+				std::cout << "You start to continue your search for water. You see a hare scurry away and    " << std::endl;
+				std::cout << "You continue onwards. You see a hare scurry away and decide that you might as  " << std::endl;
+				std::cout << "well follow it. To your surprise, it leads you to a small stream. You are      " << std::endl;
+				std::cout << "delighted and plunge your face into it. You scoop up as much water as you can  " << std::endl;
+				std::cout << "and do your best to drink it. You feel so much better. Your body is no longer  " << std::endl;
+				std::cout << "deprived of water and your mouth is once again moist.                          " << std::endl;
 				std::cout << std::endl;
 
 				pressEnterToContinue();
@@ -797,6 +797,7 @@ void storyLine()
 
 	pressEnterToContinue();
 
+	std::cout << std::endl;
 	std::cout << "     =====================================================================    " << std::endl;
 	std::cout << "     =                             THE  END                              =    " << std::endl;
 	std::cout << "     =====================================================================    " << std::endl;
