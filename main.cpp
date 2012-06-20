@@ -1,6 +1,5 @@
 #include <iostream>
 #include <fstream>
-#include "Character.h"
 
 void pressEnterToContinue();
 void invalidInput();
@@ -83,7 +82,6 @@ void storyLine()
 {
 	int userSelection;
 	std::string stringUserInput;
-	Character character;
 
 	// Introduction, basically a prologue
 	std::cout << std::endl << std::endl;
