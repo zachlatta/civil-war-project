@@ -218,7 +218,7 @@ void storyLine()
 	std::cout << "Your name: ";
 	getline (std::cin, stringUserInput);
 
-	character.setName(stringUserInput);
+	std::string characterName = stringUserInput;
 
 	std::cout << std::endl;
 
@@ -788,7 +788,7 @@ void storyLine()
 	std::cout << "rebel uniform for a cheap pair of clothes while explaining your situation to a " << std::endl;
 	std::cout << "local salesman. You bathe and change into the new clothes because you want to  " << std::endl;
 	std::cout << "look your best when your wife and kid see you. You finally approach your home  " << std::endl;
-	std::cout << "and knock on the door. Your wife opens the door and explains \"Oh my god! " << character.getName() << "!" << std::endl;
+	std::cout << "and knock on the door. Your wife opens the door and explains \"Oh my god! " << characterName << "!" << std::endl;
 	std::cout << "How did you get here! I haven\'t seen you in forever! Let me get the           " << std::endl;
 	std::cout << "children...\" You explain your situation to her and your children. They all    " << std::endl;
 	std::cout << "welcome you back with great enthusiasm and ask you all about the adventures    " << std::endl;
